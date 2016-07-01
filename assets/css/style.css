@@ -46,6 +46,15 @@ nav a:active {
 	color:grey;
 }
 
+nav a:focus {
+	background-color: darkgrey;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:15px;
+	text-decoration:none;
+	font-weight:normal;
+	color:lightgrey;
+}
+
 .divider {
 	font-color:grey;
 }
@@ -71,8 +80,15 @@ nav a:active {
 
 #container {
 	width:100%;
+	background-image: url("../../assets/images/background-texture.png");
+	padding-bottom:680px;
+}
+
+#container-portfolio {
+	width:100%;
 	height:100%;
 	background-image: url("../../assets/images/background-texture.png");
+	padding-bottom:850px;
 }
 
 #content-container {
@@ -85,7 +101,8 @@ section {
 	width:608px;
 	float:left;
 	background-color:#ffffff;
-	padding:20px;
+	padding:20px 30px 30px;
+	padding-top;
 	border:1px;
 	border-style:solid;
 	border-color:lightgrey;
@@ -117,6 +134,16 @@ p {
 	font-size:18px;
 	color:grey;
 	line-height:180%;
+	text-align:justify;
+}
+
+p::first-letter {
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	color:grey;
+	line-height:150%;
+	text-align:justify;
 }
 
 em {
@@ -131,6 +158,7 @@ em {
 .portfolio-thumbnail {
 	width:250px;
 	height:auto;
+	position:relative;
 }
 
 aside {
@@ -159,6 +187,14 @@ h2 {
 	margin:0 1.5px;
 }
 
+.icon:hover {
+	border:2px;
+	border-style:solid;
+	border-color:red;
+	width:66px;
+	height:auto;
+}
+
 input[type=text] {
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -175,7 +211,7 @@ textarea {
 	margin-bottom:10px;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=submit] {
 	background-color:#4aaaa5;
 	padding:10px 30px;
 	margin-top:10px;
@@ -185,7 +221,18 @@ input[type=button], input[type=submit], input[type=reset] {
 	color:#ffffff;
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size:18px;
+}
 
+input[type=submit]:hover {
+	background-color:blue;
+	padding:10px 30px;
+	margin-top:10px;
+	border:none;
+	cursor:pointer;
+	text-decoration:none;
+	color:#ffffff;
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:18px;
 }
 
 .form-label {
@@ -221,7 +268,6 @@ footer {
 	border-top:5px;
 	border-top-style:solid;
 	border-top-color:#4aaaa5;
-	margin-top:20px;
 }
 
 #footer-content-container {
